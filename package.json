@@ -1,0 +1,23 @@
+{
+  "name": "general-function",
+  "version": "0.0.1",
+  "description": "A package for some general function and array operations",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx babel src --watch --out-dir dist",
+    "build": "npx babel src --out-dir dist"
+  },
+  "keywords": [
+    "general",
+    "function",
+    "array",
+    "operation"
+  ],
+  "author": "ReydVires",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
