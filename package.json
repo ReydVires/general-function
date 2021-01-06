@@ -1,6 +1,6 @@
 {
   "name": "general-function",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A package for some general function and array operations",
   "main": "dist/index.js",
   "scripts": {

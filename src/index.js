@@ -20,6 +20,17 @@ export function sortArrayOfNumber (array, descending) {
 }
 
 /**
+ * Sorting an assign array of string
+ * @param {string[]} array 
+ * @param {boolean} [descending] 
+ */
+export function sortArrayOfString (array, descending) {
+	if (!isArrayOfString(array)) return;
+	array.sort();
+	if (descending) array.reverse();
+}
+
+/**
  * Sorting an assign array of object
  * @param {object[]} array 
  * @param {string} property
@@ -41,17 +52,6 @@ export function sortArrayOfObject (array, property, descending) {
 }
 
 /**
- * Sorting an assign array of string
- * @param {string[]} array 
- * @param {boolean} [descending] 
- */
-export function sortArrayOfString (array, descending) {
-	if (!isArrayOfString(array)) return;
-	array.sort();
-	if (descending) array.reverse();
-}
-
-/**
  * Check if an array of number
  * @param {unknown[]} array 
  */
@@ -61,19 +61,19 @@ export function isArrayOfNumber (array) {
 }
 
 /**
- * Check if an array of object
- * @param {unknown[]} array 
- */
-export function isArrayOfObject (array) {
-	if (!Array.isArray(array)) return false;
-	return array.every((v) => typeof v === "object");
-}
-
-/**
  * Check if an array of string
  * @param {unknown[]} array 
  */
 export function isArrayOfString (array) {
 	if (!Array.isArray(array)) return false;
 	return array.every((v) => typeof v === "string");
+}
+
+/**
+ * Check if an array of object
+ * @param {unknown[]} array 
+ */
+export function isArrayOfObject (array) {
+	if (!Array.isArray(array)) return false;
+	return array.every((v) => typeof v === "object");
 }
