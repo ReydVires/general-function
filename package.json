@@ -2,6 +2,7 @@
   "name": "general-function",
   "version": "0.1.0",
   "description": "A package for some general function and array operations",
+  "homepage": "https://github.com/ReydVires/general-function",
   "main": "dist/index.js",
   "scripts": {
     "start": "npx babel src --watch --out-dir dist",
