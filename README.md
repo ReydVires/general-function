@@ -1,6 +1,8 @@
 # general-function
 
-A package for some general function and array operations
+A package for some general function and array operations.
+
+The functions included shuffle, sorting, and array checking.
 
 <img src='https://img.shields.io/badge/Version-0.1.0-brightgreen'  alt="Version: 0.1.0"/>
 
